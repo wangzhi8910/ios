@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MMLoginOtherLoginView" customModule="myApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90G-Oq-Dzz">
+                    <rect key="frame" x="74" y="141" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Bu-kA-ZjI"/>
+                        <constraint firstAttribute="width" constant="40" id="v7I-08-fvx"/>
+                    </constraints>
+                    <state key="normal" image="MM_login_other_wechat"/>
+                    <connections>
+                        <action selector="wechatButtonHandle:" destination="iN0-l3-epB" eventType="touchUpInside" id="dn4-3u-f0I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0y-iH-yVf">
+                    <rect key="frame" x="262" y="141" width="40" height="40"/>
+                    <state key="normal" image="MM_login_other_qq"/>
+                    <connections>
+                        <action selector="qqButtonHandle:" destination="iN0-l3-epB" eventType="touchUpInside" id="6fA-rM-G3D"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrR-zK-zkG">
+                    <rect key="frame" x="0.0" y="181" width="187.5" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.49277797290000003" blue="0.70624505000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="899-BQ-ghD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.60392156860000001" green="0.61960784310000006" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-Xg-vFv">
+                    <rect key="frame" x="187.5" y="181" width="187.5" height="20"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.67450980390000004" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.60392156860000001" green="0.61960784310000006" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.1333333333" green="0.66274509800000003" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BG2-Xg-vFv" secondAttribute="trailing" id="0Id-nq-dQh"/>
+                <constraint firstItem="BG2-Xg-vFv" firstAttribute="leading" secondItem="FrR-zK-zkG" secondAttribute="trailing" id="0Uh-Vs-SeC"/>
+                <constraint firstItem="BG2-Xg-vFv" firstAttribute="width" secondItem="FrR-zK-zkG" secondAttribute="width" id="3dp-Sh-icu"/>
+                <constraint firstItem="T0y-iH-yVf" firstAttribute="width" secondItem="90G-Oq-Dzz" secondAttribute="width" id="9J2-b9-zvt"/>
+                <constraint firstItem="T0y-iH-yVf" firstAttribute="centerY" secondItem="90G-Oq-Dzz" secondAttribute="centerY" id="A5f-jH-KKz"/>
+                <constraint firstAttribute="trailing" secondItem="BG2-Xg-vFv" secondAttribute="trailing" id="EMr-wZ-6UB"/>
+                <constraint firstItem="T0y-iH-yVf" firstAttribute="height" secondItem="90G-Oq-Dzz" secondAttribute="height" id="G7y-Mn-swE"/>
+                <constraint firstItem="FrR-zK-zkG" firstAttribute="top" secondItem="90G-Oq-Dzz" secondAttribute="bottom" id="ImD-ff-BaK"/>
+                <constraint firstItem="T0y-iH-yVf" firstAttribute="centerX" secondItem="BG2-Xg-vFv" secondAttribute="centerX" id="PAT-Wc-RNk"/>
+                <constraint firstItem="BG2-Xg-vFv" firstAttribute="centerY" secondItem="FrR-zK-zkG" secondAttribute="centerY" id="ULD-Wt-3YV"/>
+                <constraint firstItem="FrR-zK-zkG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="W7t-Nf-rit"/>
+                <constraint firstItem="BG2-Xg-vFv" firstAttribute="width" secondItem="FrR-zK-zkG" secondAttribute="width" id="aDb-Ma-SWp"/>
+                <constraint firstAttribute="bottom" secondItem="FrR-zK-zkG" secondAttribute="bottom" constant="10" id="f8r-mY-pme"/>
+                <constraint firstItem="BG2-Xg-vFv" firstAttribute="height" secondItem="FrR-zK-zkG" secondAttribute="height" id="ggT-n0-yGd"/>
+                <constraint firstItem="FrR-zK-zkG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iSh-hv-mRk"/>
+                <constraint firstItem="90G-Oq-Dzz" firstAttribute="centerX" secondItem="FrR-zK-zkG" secondAttribute="centerX" id="pHi-9I-jdC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3dp-Sh-icu"/>
+                    <exclude reference="EMr-wZ-6UB"/>
+                    <exclude reference="aDb-Ma-SWp"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="qqDisplayLabel" destination="BG2-Xg-vFv" id="UuZ-Bs-8Au"/>
+                <outlet property="qqLoginButton" destination="T0y-iH-yVf" id="1k8-wV-CNA"/>
+                <outlet property="wechatDisplayLabel" destination="FrR-zK-zkG" id="5Vc-in-ERe"/>
+                <outlet property="wechatLoginButton" destination="90G-Oq-Dzz" id="QQ3-FH-nJY"/>
+                <outlet property="wechatWidthConstraint" destination="W7t-Nf-rit" id="FJC-gX-CuV"/>
+            </connections>
+            <point key="canvasLocation" x="-185" y="-144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MM_login_other_qq" width="40" height="40"/>
+        <image name="MM_login_other_wechat" width="40" height="40"/>
+    </resources>
+</document>

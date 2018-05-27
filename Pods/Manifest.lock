@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.2.0)
+  - HandyJSON (1.7.1)
+  - Kingfisher (3.10.3)
+  - Moya (8.0.4):
+    - Moya/Core (= 8.0.4)
+  - Moya/Core (8.0.4):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.2)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - HandyJSON (~> 1.7.1)
+  - Kingfisher (~> 3.2)
+  - Moya (~> 8.0.4)
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
+  Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
+  Moya: a08bc060c7a44eee27447b239ed33a189b641e2b
+  Result: 4edd39003fdccf281d418ee1b006571f70123250
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: e2f0223c606578989723b0301c06fb5c8896ea27
+
+COCOAPODS: 1.2.1
